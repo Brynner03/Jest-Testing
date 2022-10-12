@@ -44,7 +44,6 @@ describe('validateStringNotEmpty()', () => {
         const validationFn = () => validateStringNotEmpty(input)
         expect(validationFn).not.toThrow()
     })
-    
 })
 
     // Validate Number
@@ -73,5 +72,4 @@ describe('validateNumber()', () => {
         const validationFn = () => validateNumber(input)
         expect(validationFn).not.toThrow()
     })
-
 })
