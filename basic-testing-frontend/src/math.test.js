@@ -39,3 +39,27 @@ it('Should yield a correct sum if an array of numeric string values is provided'
     const expectedResult = numbers.reduce((prev, curr) => +prev + +curr, 0)
     expect(result).toBe(expectedResult)
 })
+
+it('Should yield 0 if an empty array is provided', () => {
+    // Arrange
+    const numbers = []
+
+    // Act
+    const result = add(numbers)
+
+    // Assert
+    expect(result).toBe(0)
+})
+
+it('Should throw an error if no value is passed into the function', () => {
+    // Arrange
+    const resultFn = () => {
+        // Act
+        add()
+    }
+
+    // Assert
+    // Checks if resultFn throws an error.
+    expect(resultFn).toThrow()
+
+})
